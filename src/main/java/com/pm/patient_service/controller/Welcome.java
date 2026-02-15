@@ -1,4 +1,4 @@
-package com.pm.patient_service.Controller;
+package com.pm.patient_service.controller;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
