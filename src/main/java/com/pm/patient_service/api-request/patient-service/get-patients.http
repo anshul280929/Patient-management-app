@@ -1,0 +1,4 @@
+### GET request to retrieve patients data
+GET http://localhost:8080/patients
+
+###
