@@ -1,0 +1,14 @@
+### POST Request to create a new patient in the patient service
+POST http://localhost:8080/patients
+Content-Type: application/json
+
+{
+  "name":"Anshul Bhaskar",
+  "email":"anshulbhaskar50@gmail.com",
+  "address":"123 Main Street, Cityville",
+  "birthDate":"1990-01-01",
+  "registeredDate":"2023-01-01"
+}
+
+
+###

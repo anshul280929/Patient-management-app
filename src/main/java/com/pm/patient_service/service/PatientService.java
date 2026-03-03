@@ -19,13 +19,13 @@ public class PatientService {
     public PatientService(PatientRepository patientRepository) {
         this.patientRepository = patientRepository;
     }
-
+    //Get Patient
     public List<PatientResponseDTO> getPatients(){
         List<Patient> patients = patientRepository.findAll();
         return patients.stream().map(PatientMapper::toDTO).toList();
 
     }
-
+    //Create a Patient entity
     public PatientResponseDTO createPatient(PatientRequestDTO patientRequestDTO){
         Patient newPatient=patientRepository.save(
                 PatientMapper.toModel(patientRequestDTO)
