@@ -49,7 +49,7 @@ public class PatientService {
                 ()->new PatientNotFoundException("Patient with id "+id+" not found")
         );
         //check if the email is already used by another patient
-        if (patientRepository.existsByEmail(patientRequestDTO.getEmail())){
+        if (patientRepository.existByEmailAndIdNot(patientRequestDTO.getEmail(),id)){
             throw new EmailAlreadyExistException("Patient with this email already exists"+patientRequestDTO.getEmail());
         }
         //update the patient entity
