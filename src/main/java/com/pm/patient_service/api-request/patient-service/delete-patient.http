@@ -1,0 +1,2 @@
+###Delete a patient by id
+DELETE http://localhost:8080/patients/{id}
