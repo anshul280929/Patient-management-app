@@ -35,6 +35,5 @@ public class GlobalExceptionHandler {
         Map<String,String> errors=new HashMap<>();
         errors.put("message","Patient not found");
         return ResponseEntity.status(404).body(errors);
-
     }
 }
